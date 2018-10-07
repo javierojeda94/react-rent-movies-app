@@ -39,6 +39,8 @@ gem 'react_on_rails', '11.1.6'
 
 gem 'mini_racer', platforms: :ruby
 
+gem 'devise'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 

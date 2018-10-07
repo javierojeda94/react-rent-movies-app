@@ -1,0 +1,5 @@
+<%= react_component('LandingPage', props: { loginUrl: user_session_path,
+                                            signUpUrl: user_registration_path,
+                                            authenticityToken: form_authenticity_token,
+                                            email: flash[:email],
+                                            lastAction: flash[:action] }) %>
