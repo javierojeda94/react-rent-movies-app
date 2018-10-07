@@ -10,7 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_07_010539) do
+ActiveRecord::Schema.define(version: 2018_10_07_051858) do
+
+  create_table "movies", force: :cascade do |t|
+    t.string "name", null: false
+    t.string "synopsis", null: false
+    t.string "rating"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false

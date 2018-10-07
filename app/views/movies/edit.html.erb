@@ -1,0 +1,7 @@
+<%= react_component('MovieForm', props: { movie: @movie.as_json,
+                                          action: movie_path(@movie),
+                                          authenticityToken: form_authenticity_token,
+                                          submitted: flash[:submitted],
+                                          sentName: flash[:sent_name],
+                                          sentSynopsis: flash[:sent_synopsis],
+                                          sentRating: flash[:sent_rating] }) %>

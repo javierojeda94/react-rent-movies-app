@@ -12,11 +12,11 @@ RSpec.describe PagesController, type: :controller do
         sign_in user
         get :index
       end
-      it { should redirect_to('/movies') }
+      it { should redirect_to(movies_path) }
     end
 
     context 'when user is not logged in' do
-      it { should_not redirect_to('/movies') }
+      it { should_not redirect_to(movies_path) }
     end
   end
 end

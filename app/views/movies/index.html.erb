@@ -1,0 +1,4 @@
+<%= react_component('MovieList', props: { movies: @movies.as_json,
+                                          newMovieUrl: new_movie_path,
+                                          rentUrl: rent_movie_path,
+                                          authenticityToken: form_authenticity_token }) %>

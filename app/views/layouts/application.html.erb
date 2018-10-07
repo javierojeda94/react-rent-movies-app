@@ -16,6 +16,13 @@
     <%= react_component('FlashMessages', props: { error: flash[:error],
                                                   success: flash[:success],
                                                   info: flash[:info] }) %>
-    <%= yield %>
+    <% if user_signed_in? %>
+      <%= react_component('Header', props: { logOutUrl: destroy_user_session_path }) %>
+      <div class="container">
+        <%= yield %>
+      </div>
+    <% else %>
+      <%= yield %>
+    <% end %>
   </body>
 </html>
