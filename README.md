@@ -1,7 +1,7 @@
 # Rspec output
     MoviesController
       routing
-        <span style="color: green">should route GET /movies to/from {:action=>"index", :controller=>"movies"}</span>
+        should route GET /movies to/from {:action=>"index", :controller=>"movies"}</span>
         should route GET /movies/1 to/from {:action=>"show", :id=>"1", :controller=>"movies"}
         should route GET /movies/new to/from {:action=>"new", :controller=>"movies"}
         should route POST /movies to/from {:action=>"create", :controller=>"movies"}
