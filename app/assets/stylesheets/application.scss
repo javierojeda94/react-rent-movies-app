@@ -32,6 +32,7 @@ h6 {
   width: 100%;
   top: 0;
   position: fixed;
+  animation: FadeAnimation 1s ease-in 2s forwards;
   article {
     height: 40px;
     text-align: center;
@@ -76,5 +77,16 @@ h6 {
       background-color: rgba(0,0,0,0.1);
       transition: background-color 0.1s linear;
     }
+  }
+}
+@keyframes FadeAnimation {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
   }
 }

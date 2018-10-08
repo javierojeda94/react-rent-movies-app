@@ -30,7 +30,9 @@ export default class MovieList extends Component {
       <div className='movie-list'>
         <h1>Movies List:</h1>
         <a href={newMovieUrl}>Add movie</a>
-        {movies}
+        <section className='list'>
+          {movies}
+        </section>
       </div>
     );
   }
